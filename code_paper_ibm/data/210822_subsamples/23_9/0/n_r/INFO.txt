@@ -1,0 +1,14 @@
+Date: 2022_05_30_200708
+Random seed: 23
+Number of species: 15
+Initial omout of each species per tube: [10, 10, 10, 10]
+Initial nutrients: [2000, 2000, 2000, 2000]
+Initial toxins: [700, 700, 700, 700, 700, 700, 700, 700, 700, 700]
+Total tubes: 21
+Tubes to transfer: 7
+Propagation: n_r
+Rounds: 50
+Time steps: 80
+Mutate: 0.01fs0.4
+Death: 700.0^2
+Scaling for nutrients in division: [0.0005, 0.0005, 0.0005, 0.0005]

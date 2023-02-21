@@ -1,0 +1,3 @@
+Repeat: 8; Round: 22; Extinctions: 1 
+Repeat: 8; Round: 28; Extinctions: 2 
+Repeat: 8; Round: 39; Extinctions: 1 

@@ -1,0 +1,9 @@
+
+for method in {0..12}
+do 
+    for seed in {22..26}
+    do  
+        sbatch fb.sh $seed $method
+        sleep 1 #at some point I had interferences when creating directories, I think it is solved though
+    done 
+done 

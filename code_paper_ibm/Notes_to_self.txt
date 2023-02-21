@@ -1,0 +1,4 @@
+In figure 4C, MIR is not dashed, so would be like MIS, not sure why this was happening only in Björn´s version of the script. Well the reson was that 
+in that script we were not including MIR, just renaming mip_s as MIR for the legend, so nevermind, I just corrected it.
+
+In fig 5C, indicate it's only DS.

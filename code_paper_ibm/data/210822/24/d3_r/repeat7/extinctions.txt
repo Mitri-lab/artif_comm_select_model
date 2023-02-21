@@ -1,0 +1,3 @@
+Repeat: 7; Round: 5; Extinctions: 1 
+Repeat: 7; Round: 14; Extinctions: 1 
+Repeat: 7; Round: 24; Extinctions: 1 

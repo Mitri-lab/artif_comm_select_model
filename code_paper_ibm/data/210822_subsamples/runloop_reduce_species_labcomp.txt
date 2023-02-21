@@ -1,0 +1,6 @@
+#here for instance just for seed 23 and seed 26
+for seed in 22 26
+do
+    nohup nice -n 10 python3 211019_model_reduce_species_labcompCORRECTED.py $seed > errors2$seed.txt &
+    sleep 1 
+done

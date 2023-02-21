@@ -1,0 +1,12 @@
+Date: 2022_06_02_192718
+Random seed: 26
+Initial nutrients: [2000, 2000, 2000, 2000]
+Initial toxins: [700, 700, 700, 700, 700, 700, 700, 700, 700, 700]
+Total tubes: 10
+Tubes to transfer: 3
+Propagation: n_r
+Rounds: 25
+Time steps: 80
+Mutate: 0fs0.4
+Death: 700.0^2
+Scaling for nutrients in division: [0.0005, 0.0005, 0.0005, 0.0005]
