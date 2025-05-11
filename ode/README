@@ -1,0 +1,14 @@
+Welcome! This is the python code (python 3.7-3.10 at least) to a) simulate and b) plot the methods FOR THE ODE 
+MODEL described in [1] and is meant to accompagny the initial submission of the same. All code written by Bjorn Vessman 
+(bvessman@gmail.com) unless otherwise stated. 
+
+HOW TO SIMULATE
+Simulate the model and selection method(s) by modifying the experimental parameters in casepars.py and selsimsettings.py and the model parameters for microbial growth etc in growthpars.py. Then, run with (for example) python3.7 and the random seed 12345 as 
+> python3.7 SimselReps_Init.py 12345
+The program could take up to 8h to run the standard settings (50 rounds of selection, 21 communities of 4 species chosen from a pool of 15) on a regular desktop or laptop computer.
+
+HOW TO PLOT
+The scripts in the "plot" folder are organized by figure panel and will generate the main graph and some supplementary and/or statistics. The scripts are iPython notebooks, and are most easily run in a jupyter notebook. The "data" directory contains the example data used to generate the graphs in the submitted manuscript. 
+
+
+[1] Vessman, Guridi-Fernández, Arias-Sánchez & Mitri, bioRxiv, 2023.01.08.523165; doi: https://doi.org/10.1101/2023.01.08.523165 
