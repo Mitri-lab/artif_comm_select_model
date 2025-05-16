@@ -44,31 +44,26 @@ Configuration:
 Modify the number of species, communities, species per community and other experimental parameters. Specify the output directory.
 
 Run the main model for a single random seed as 
->
-python 211018_main_model_unix.py $seed > errors_main_$seed.txt &
+> python 211018_main_model_unix.py $seed > errors_main_$seed.txt &
 
 or in parellel for a number of seeds as 
->
-for seed in {22..26}
-do
-    nohup nice -n 10 python 221018_main_model_unix.py $seed > errors_main_$seed.txt &
-    sleep 1 
-done
+> for seed in {22..26}
+> do
+>     nohup nice -n 10 python 221018_main_model_unix.py $seed > errors_main_$seed.txt &
+>     sleep 1 
+> done
 
 #### All communities 
 Config: Define the random seed, the number of species, the length of the simulation, the number and concentration of nutrients and toxic compounds. 
 Run as
->
-python 211005_model_test_all_coms.py
+> python 211005_model_test_all_coms.py
 
 #### Transfer best communities without selection
 Config: For best communities after selection, specify the random seed, the propagation methods of interest and the path to the data. For simulating the growth and transfer of communities with the same community composition as the best communities after selection, but consisting of _ancestral_ species.
->
-python 210821_transfer_evoved_coms_no_u.py
+> python 210821_transfer_evoved_coms_no_u.py
 
 and 
->
-python 210821_transfer_evoved_coms_no_u_ancestral.py
+> python 210821_transfer_evoved_coms_no_u_ancestral.py
 
 
 #### Sensitivity analysis 
@@ -79,21 +74,26 @@ Config: For either sensitivity analysis, define the main community size (the num
 - Bottleneck size: The transfer bottleneck depends on the propagation method, being ca 10 cells in disassembly, and 5% of the tube in the other methods. Define the multiplier "d_factor" as 0.5, 2, ... etc to run each condition with the modified bottleneck. 
 
 Run the full sensitivity analysis as
->
-for seed in {22..26}
-do
-    nohup nice -n 10 python3 211018_model_strains_poisson_tubes.py $seed > errors_tubes$seed.txt &
-    nohup nice -n 10 python3 211018_model_strains_poisson_invasion.py $seed > errors_invasion$seed.txt & 
-    nohup nice -n 10 python3 211019_model_reduce_species_labcompCORRECTED.py $seed > errors_species$seed.txt & 
-    nohup nice -n 10 python3 211025_model_strains_poisson_bottleneck_labcomp.py $seed > errors_bottleneck.txt &
-    sleep 1
-done
+> for seed in {22..26}
+> do
+>     nohup nice -n 10 python 211018_model_strains_poisson_tubes.py $seed > errors_tubes$seed.txt &
+>     nohup nice -n 10 python 211018_model_strains_poisson_invasion.py $seed > errors_invasion$seed.txt & 
+>     nohup nice -n 10 python 211019_model_reduce_species_labcompCORRECTED.py $seed > errors_species$seed.txt & 
+>     nohup nice -n 10 python 211025_model_strains_poisson_bottleneck_labcomp.py $seed > errors_bottleneck.txt &
+>     sleep 1
+> done
 
 
 
 ## ODE model
 Simulate the model and selection method(s) by modifying the experimental parameters in casepars.py and selsimsettings.py and the model parameters for microbial growth etc in growthpars.py. Then, run with python (version >3.7) and the random seed 12345 as 
 > python SimselReps_Init.py 12345
+
+or for a round of seeds as 
+> for seed in {22..26}
+> do
+>     nohup nice -n 10 python SimselReps_Init.py $seed &
+> done
 
 The program could take up to 8h to run the standard settings (50 rounds of selection, 21 communities of 4 species chosen from a pool of 15) on a regular desktop or laptop computer.
 
