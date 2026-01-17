@@ -7,10 +7,10 @@ The code is written in python, in some of the cases the scritps have been adapte
 the python script externally from unix, which helps to paralelise runs.
 
 The data we generate is needed for the following figures of the paper:
-- main_model: all the figures from the IBM model.
-- all_possible_combinations_of_species: Fig2E,F and Fig3G.
-- run_evolved_communities_with_ancestral_species: Fig5B,C.
-- run_monocultures_from_species_in_evolved_communities: Fig3G.
+- main_model: all the figures from the IBM model (Fig2,3,4,5,6).
+- all_possible_combinations_of_species: Fig2C,D and Fig3F,G.
+- run_evolved_communities_with_ancestral_species: Fig5.
+- run_monocultures_from_species_in_evolved_communities: Fig3F,G.
 - sensitivity_analysis_tubes_subsamples_invasion_bottleneck: Fig6B-F.
 - transfer_best_communties_without_selection: Fig6A.
 
