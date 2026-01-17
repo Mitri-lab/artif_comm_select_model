@@ -1,4 +1,4 @@
-Here we have the code to generate data for the "sensitivity analysis" we show in Fig6B-E.
+Here we have the code to generate data for the "sensitivity analysis" we show in Fig6B-F.
 
 Note that these scripts generate a lot of data, so can become quite heavy to run. Basically
 we change the conditions to:
@@ -11,6 +11,8 @@ we change the conditions to:
 - reduce_species: the metacommunity will contain not 15 species but a lower number.
 
 - bottleneck: change the dilution bottleneck at the propagation step.
+
+- time: change the number of time_steps
 
 All these scripts where adapted to run from Unix with the corresponding "runloop", to see
 the specificities of each script how to run and how data is stored, check the corresponding
