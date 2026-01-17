@@ -11,6 +11,6 @@ The data we generate is needed for the following figures of the paper:
 - all_possible_combinations_of_species: Fig2E,F and Fig3G.
 - run_evolved_communities_with_ancestral_species: Fig5B,C.
 - run_monocultures_from_species_in_evolved_communities: Fig3G.
-- sensitivity_analysis_tubes_subsamples_invasion_bottleneck: Fig6B-E.
+- sensitivity_analysis_tubes_subsamples_invasion_bottleneck: Fig6B-F.
 - transfer_best_communties_without_selection: Fig6A.
 
